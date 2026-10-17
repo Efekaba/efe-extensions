@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bulk Downloader – Images, Links &amp; Files</title>
+  <meta name="description" content="Download every image, video, PDF and file on a page in one click. A free Chrome extension with no tracking.">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #F8FAFC;
+      --surface: #FFFFFF;
+      --text: #0F172A;
+      --muted: #475569;
+      --border: #E2E8F0;
+      --primary: #2563EB;
+      --accent: #22C55E;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0F172A; --surface: #111A2E; --text: #F1F5F9; --muted: #CBD5E1; --border: #1E293B; --primary: #60A5FA; }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    header { background: #2563EB; color: #FFFFFF; padding: 40px 20px 36px; }
+    .wrap { max-width: 720px; margin: 0 auto; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 18px; }
+    .brand .tile { width: 40px; height: 40px; border-radius: 11px; background: #FFFFFF; display: grid; place-items: center; }
+    h1 { font-size: 34px; line-height: 1.2; margin: 22px 0 6px; letter-spacing: -0.02em; }
+    .pitch { margin: 0; font-size: 20px; opacity: 0.95; }
+    main { padding: 32px 20px 56px; }
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 28px; }
+    h2 { font-size: 20px; margin: 0 0 8px; }
+    ul { padding-left: 22px; margin: 0 0 24px; }
+    li { margin: 6px 0; }
+    li::marker { color: var(--accent); }
+    figure { margin: 0 0 24px; }
+    figure img { display: block; width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--border); }
+    figcaption { margin-top: 8px; color: var(--muted); font-size: 15px; }
+    .links { display: flex; flex-wrap: wrap; gap: 12px; margin: 0; }
+    .links a {
+      display: inline-block; padding: 9px 18px; border: 1px solid var(--primary); border-radius: 999px;
+      color: var(--primary); font-weight: 600; text-decoration: none;
+    }
+    .links a:hover { background: var(--primary); color: var(--surface); }
+    a { color: var(--primary); }
+    footer { color: var(--muted); font-size: 14px; text-align: center; padding: 0 20px 32px; }
+    @media (max-width: 520px) {
+      h1 { font-size: 28px; }
+      .card { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="brand">
+        <span class="tile" aria-hidden="true">
+          <svg width="30" height="30" viewBox="16 16 96 96" xmlns="http://www.w3.org/2000/svg">
+            <mask id="m"><rect x="0" y="0" width="128" height="128" fill="#fff"/><rect x="8" y="34" width="86" height="86" rx="23" fill="#000"/></mask>
+            <rect x="47" y="21" width="60" height="60" rx="14" fill="none" stroke="#2563EB" stroke-width="10" mask="url(#m)"/>
+            <rect x="16" y="42" width="70" height="70" rx="17" fill="#2563EB"/>
+            <path d="M51 55 V93 M35.5 78.5 L51 94 L66.5 78.5" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        Bulk Downloader
+      </div>
+      <h1>Bulk Downloader – Images, Links &amp; Files</h1>
+      <p class="pitch">Download every image, video, PDF and file on a page in one click.</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap card">
+      <h2>What it does</h2>
+      <ul>
+        <li>Finds the images, videos, audio, PDFs, Office documents, archives and links on any page.</li>
+        <li>Filter the list by file type, extension, minimum image size or keyword.</li>
+        <li>Picks the highest-resolution version of responsive images.</li>
+        <li>Saves your selection into a folder named after the site, and retries any downloads that fail.</li>
+      </ul>
+      <figure>
+        <img src="screenshot-1.png" width="1280" height="800" alt="Bulk Downloader listing the images on a photo gallery page, with file-type filters on the left and ten images selected for download">
+        <figcaption>Click the toolbar icon on any page to see everything you can download.</figcaption>
+      </figure>
+      <p class="links">
+        <a href="support.html">Support and FAQ</a>
+        <a href="privacy.html">Privacy policy</a>
+      </p>
+    </div>
+  </main>
+
+  <footer>Bulk Downloader – Images, Links &amp; Files is a free Chrome extension with no tracking. This page makes no third-party requests.</footer>
+</body>
+</html>
