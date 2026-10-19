@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy – Bulk Downloader</title>
-  <meta name="description" content="Bulk Downloader does not collect, store, transmit or sell any personal data.">
+  <meta name="description" content="Bulk Downloader does not collect or sell any personal data. The only thing it ever sends is a Pro license key, to Gumroad, to verify it.">
   <style>
     :root {
       color-scheme: light dark;
@@ -35,6 +35,7 @@
     main { padding: 32px 20px 56px; }
     .card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 28px; }
     .lead { font-size: 20px; font-weight: 600; margin-top: 0; }
+    h2 { font-size: 20px; margin: 28px 0 8px; }
     ul { padding-left: 22px; }
     li { margin: 6px 0; }
     li::marker { color: var(--accent); }
@@ -58,20 +59,31 @@
         Bulk Downloader
       </div>
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: <time datetime="2026-10-17">17 October 2026</time></p>
+      <p class="updated">Last updated: <time datetime="2026-10-19">19 October 2026</time></p>
     </div>
   </header>
 
   <main>
     <div class="wrap card">
-      <p class="lead">Bulk Downloader does not collect, store, transmit or sell any personal data.</p>
+      <p class="lead">Bulk Downloader does not collect or sell any personal data.</p>
       <ul>
         <li>When you click the extension icon, it reads the current page to list downloadable files.</li>
         <li>That list is kept only in your browser's temporary memory and is deleted when you close the browser.</li>
         <li>Your settings (folder name and filters) are stored locally in your browser.</li>
-        <li>The extension makes no network requests except showing previews of the images it found on the page and downloading the files you choose.</li>
+        <li>The extension makes no network requests except showing previews of the images it found on the page, downloading the files you choose, and the Pro license check described below.</li>
       </ul>
-      <p>There are no servers, analytics, ads or trackers, and nothing is shared with anyone.</p>
+
+      <h2>Bulk Downloader Pro</h2>
+      <p>Version 1.1 adds optional paid features. If you don't buy or activate Pro, nothing in this section applies to you.</p>
+      <ul>
+        <li><strong>License check.</strong> When you activate Pro, the license key you paste is sent to <a href="https://gumroad.com/privacy">Gumroad</a>, the payment provider, to verify it, and it is checked again about once a week. Nothing else is sent, and no personal data is stored: the extension keeps only the key and the time of the last check, never your name or email address. Your purchase itself is handled by Gumroad under its own privacy policy.</li>
+        <li><strong>Download as one ZIP.</strong> The extension fetches the files you selected, inside your browser, to put them in the ZIP. They go to your Downloads folder and nowhere else.</li>
+        <li><strong>Add all tabs.</strong> When you click it, the extension reads the pages open in the current window the same way it reads the current page.</li>
+        <li><strong>File names and folder rules</strong>, and your Pro status, are stored in Chrome's own storage. If you use Chrome sync, Chrome syncs them to your other computers.</li>
+        <li>ZIP and "Add all tabs" need access to websites, and the license check needs access to api.gumroad.com. Chrome asks you for each permission the first time you use the feature, and you can remove them at any time on chrome://extensions.</li>
+      </ul>
+
+      <p>There are no servers, analytics, ads or trackers, and nothing is shared with anyone apart from the license key check with Gumroad.</p>
       <p class="contact">Contact: <a href="mailto:destek@abeerp.com">destek@abeerp.com</a></p>
     </div>
   </main>
